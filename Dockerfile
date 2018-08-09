@@ -14,4 +14,5 @@ COPY --from=builder /go/bin/tflow2 /go/bin/
 COPY --from=builder /go/src/github.com/taktv6/tflow2/tflow2.css /
 COPY --from=builder /go/src/github.com/taktv6/tflow2/tflow2.html /
 COPY --from=builder /go/src/github.com/taktv6/tflow2/tflow2.js /
+COPY --from=builder /go/src/github.com/taktv6/tflow2/vendors/papaparse/papaparse.min.js /vendors/papaparse/
 COPY config.yml /
