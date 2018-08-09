@@ -1,0 +1,4 @@
+data_dir: "/data"
+frontend:
+  enable: true
+  listen: ":4444"
