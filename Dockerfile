@@ -7,7 +7,7 @@ ENV CGO_ENABLED=0
 RUN go get github.com/taktv6/tflow2
 
 FROM scratch
-CMD ["/go/bin/tflow2"]
+CMD ["/go/bin/tflow2","-logtostderr"]
 WORKDIR /
 VOLUME /data
 COPY --from=builder /go/bin/tflow2 /go/bin/
